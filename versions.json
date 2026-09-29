@@ -34,11 +34,11 @@
     },
     "claude_code_extension": {
       "id": "anthropic.claude-code",
-      "version": "2.1.284"
+      "version": "2.1.285"
     },
     "claude_code_cli": {
       "id": "@anthropic-ai/claude-code",
-      "version": "2.1.284"
+      "version": "2.1.285"
     },
     "python": {
       "version": "3.14.7",
