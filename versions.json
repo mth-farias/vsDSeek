@@ -1,0 +1,55 @@
+{
+  "app": {
+    "id": "vsdseek",
+    "name": "vsDSeek",
+    "proxy_port": 18766
+  },
+  "models": {
+    "wire": {
+      "pro": "deepseek-v4-pro",
+      "flash": "deepseek-flash"
+    },
+    "picker": {
+      "claude-opus-4-8[1m]": "pro",
+      "claude-fable-5-1[1m]": "pro",
+      "claude-sonnet-4-6[1m]": "flash",
+      "claude-haiku-4-5[1m]": "flash"
+    },
+    "display": {
+      "claude-opus-4-8[1m]": "Opus (DeepSeek V4 Pro)",
+      "claude-fable-5-1[1m]": "Fable (DeepSeek V4 Pro)",
+      "claude-sonnet-4-6[1m]": "Sonnet (DeepSeek V4.1 Flash)",
+      "claude-haiku-4-5[1m]": "Haiku (DeepSeek V4.1 Flash)"
+    },
+    "subagent": "claude-haiku-4-5[1m]"
+  },
+  "artifacts": {
+    "vscode": {
+      "version": "1.139.1",
+      "commit": "04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1",
+      "channel": "stable",
+      "target": "win32-x64-user",
+      "download": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/VSCodeUserSetup-x64-1.139.1.exe",
+      "sha256": "8543af48a4639b7d31f53e2a005f285213de229b725364964e679ed4526a7342"
+    },
+    "claude_code_extension": {
+      "id": "anthropic.claude-code",
+      "version": "2.1.284"
+    },
+    "claude_code_cli": {
+      "id": "@anthropic-ai/claude-code",
+      "version": "2.1.284"
+    },
+    "python": {
+      "version": "3.14.7",
+      "download": "https://www.python.org/ftp/python/3.14.7/python-3.14.7-embed-amd64.zip",
+      "sha256": "d297e5ff019966817ad8502465176139f2d3d840fa4ed84b13bed399a6ab1f15",
+      "note": "vendored at runtime/python (embeddable; runs the proxy and CLI); install restores it if deleted"
+    }
+  },
+  "resolvers": {
+    "vscode_update": "https://update.code.visualstudio.com/api/update/win32-x64-user/stable/{version}",
+    "npm_registry": "https://registry.npmjs.org/@anthropic-ai/claude-code/latest",
+    "vsix_gallery": "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery"
+  }
+}

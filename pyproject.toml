@@ -1,0 +1,15 @@
+[project]
+name = "vsdseek"
+version = "0.2.0"
+description = "Local VS Code + Claude Code wired to DeepSeek (two-model wire)."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 80
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "D", "B", "UP"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

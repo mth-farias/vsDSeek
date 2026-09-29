@@ -1,0 +1,22 @@
+# secrets
+.env
+
+# generated state (pid, logs, settings backups)
+state/
+
+# downloaded installers
+.cache/
+
+# vendored Python runtime -- versions.json pins it with a sha256, and
+# VsDSeek.bat restores it if deleted, so it does not need to live in history
+runtime/
+
+# test scratch (created by tests/__init__.py)
+vsdseek-tests-*/
+__pycache__/
+*.pyc
+# Claude Code local session state (CLAUDE.md stays tracked)
+.claude/
+
+# Playwright MCP page snapshots
+.playwright-mcp/

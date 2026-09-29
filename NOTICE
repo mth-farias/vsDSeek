@@ -1,0 +1,19 @@
+# Notice — third-party components
+
+This app installs user-scoped software on this machine and talks to the
+DeepSeek API. Full license texts ship inside each artifact; this file
+names them and points at the source. Versions live in `versions.json`.
+
+| Component | Source | License |
+|---|---|---|
+| Visual Studio Code (win32-x64 user setup) | https://code.visualstudio.com | MIT (plus bundled components under their own licenses) |
+| `anthropic.claude-code` VS Code extension | https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code | Anthropic terms of service |
+| `@anthropic-ai/claude-code` (npm global CLI) | https://www.npmjs.com/package/@anthropic-ai/claude-code | Anthropic terms of service |
+| DeepSeek API | https://api.deepseek.com | DeepSeek terms of service |
+| CPython (embeddable, vendored at `runtime/python`) | https://python.org | PSF License 2.0 |
+| Ruff (optional, dev tool only) | https://pypi.org/project/ruff/ | MIT |
+
+The DeepSeek API key lives only in this folder's gitignored `.env` and in
+the two settings files the switcher writes (`~/.claude/settings.json`,
+VS Code user settings). It is never logged and never leaves this machine
+except to `api.deepseek.com` through the local passthrough.
