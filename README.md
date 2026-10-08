@@ -92,8 +92,8 @@ daily use.
 2. Optional removals: `code --uninstall-extension anthropic.claude-code`
    and `npm uninstall -g @anthropic-ai/claude-code` (extension and CLI),
    then uninstall VS Code from Windows *Apps → Installed apps*.
-3. Delete this folder (`O:\puri42\apps\vsDSeek`) — nothing else writes
-   outside it except the settings above and the app's `.cache`.
+3. Delete this folder — nothing else writes outside it except the settings
+   above and the app's `.cache`.
 
 ## Troubleshooting
 
