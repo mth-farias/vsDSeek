@@ -25,20 +25,20 @@
   },
   "artifacts": {
     "vscode": {
-      "version": "1.139.1",
-      "commit": "04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1",
+      "version": "1.140.0",
+      "commit": "07f806f999227108933c2e30515b26eecc1fda74",
       "channel": "stable",
       "target": "win32-x64-user",
-      "download": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/04c0d99f4fb0d8afe6ce4f0c58e31e183ac3e4b1/VSCodeUserSetup-x64-1.139.1.exe",
-      "sha256": "8543af48a4639b7d31f53e2a005f285213de229b725364964e679ed4526a7342"
+      "download": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/07f806f999227108933c2e30515b26eecc1fda74/VSCodeUserSetup-x64-1.140.0.exe",
+      "sha256": "b66449d7acf503f556b5a50593717b0092f48df1f62ce38a7dba5b93da0b425e"
     },
     "claude_code_extension": {
       "id": "anthropic.claude-code",
-      "version": "2.1.285"
+      "version": "2.1.292"
     },
     "claude_code_cli": {
       "id": "@anthropic-ai/claude-code",
-      "version": "2.1.285"
+      "version": "2.1.292"
     },
     "python": {
       "version": "3.14.7",
