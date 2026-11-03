@@ -107,13 +107,13 @@ class SanitizeTests(unittest.TestCase):
         self.assertEqual(out["output_config"], {"effort": "high"})
         self.assertEqual(notes, [])
 
-    def test_effort_map_owner_policy(self) -> None:
+    def test_effort_map_matches_docs(self) -> None:
         for raw, want in (
             ("minimal", "low"),
             ("low", "low"),
             ("medium", "high"),
-            ("high", "max"),
-            ("xhigh", "max"),
+            ("high", "high"),
+            ("xhigh", "high"),
             ("max", "max"),
             ("ultra", "max"),
         ):

@@ -7,11 +7,10 @@ byte-for-byte, and logs one redacted line per request.
 
 Every transformed field is backed by the DeepSeek docs:
 - ``cache_control`` ignored; ``budget_tokens`` ignored  -> strip/drop.
-- effort: DeepSeek's real tiers are low/high/max. This app maps
-  minimal/low to ``low``, medium to ``high``, and everything at or above
-  high (high/xhigh/ultra/max) to ``max`` - the owner's policy, so the
-  High and Max picks both run at full effort. The endpoint 422s
-  anything outside its seven-value enum.
+- effort: DeepSeek's real tiers are low/high/max. This app follows the
+  docs' own table: minimal/low to ``low``, medium/high/xhigh to
+  ``high``, and max/ultra to ``max``. The endpoint 422s anything outside
+  its seven-value enum.
 - unknown model ids silently fall back to flash upstream -> allowlist.
 """
 
@@ -55,8 +54,8 @@ EFFORT_CLAMP = {
     "minimal": "low",
     "low": "low",
     "medium": "high",
-    "high": "max",
-    "xhigh": "max",
+    "high": "high",
+    "xhigh": "high",
     "ultra": "max",
     "max": "max",
 }

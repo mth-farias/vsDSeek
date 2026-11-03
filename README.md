@@ -11,13 +11,13 @@ wire models:
 
 Subagents ride Flash. The picker is curated via `modelPicker` (with
 `replaceBuiltInOptions`) in `~/.claude/settings.json`. Every new session
-starts on **Flash at Low effort**; raising the slider (or picking Pro)
+starts on **Flash at Medium effort**; raising the slider (or picking Pro)
 lasts for that session only.
 
-Effort: DeepSeek's real tiers are low/high/max. This app maps
-`minimal/low→low`, `medium→high`, and `high/xhigh/ultra/max→max` (the
-owner's policy: High and Max both run at full effort). No client-side
-cap — `maxEffortLevel: max` keeps the top tier selectable.
+Effort: DeepSeek's real tiers are low/high/max. This app follows the
+docs' own table — `minimal/low→low`, `medium/high/xhigh→high`,
+`max/ultra→max`. No client-side cap — `maxEffortLevel: max` keeps the
+top tier selectable.
 
 `VsDSeek-restore.bat` puts everything back on Anthropic (claude.ai login).
 

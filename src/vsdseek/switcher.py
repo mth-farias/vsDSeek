@@ -140,8 +140,8 @@ def deepseek_env(pins: dict[str, Any], key: str) -> dict[str, str]:
         "ANTHROPIC_DEFAULT_HAIKU_MODEL": haiku,
         "ANTHROPIC_DEFAULT_FABLE_MODEL": fable,
         "CLAUDE_CODE_SUBAGENT_MODEL": pins["models"]["subagent"],
-        # Owner's default for every new session: Flash at low effort.
-        "CLAUDE_CODE_EFFORT_LEVEL": "low",
+        # Owner's default for every new session: Flash at medium effort.
+        "CLAUDE_CODE_EFFORT_LEVEL": "medium",
         "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "786432",
         "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "1000000",
         "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",

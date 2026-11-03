@@ -108,7 +108,7 @@ class SwitcherTests(unittest.TestCase):
         self.assertEqual(
             env["CLAUDE_CODE_SUBAGENT_MODEL"], PINS["models"]["subagent"]
         )
-        self.assertEqual(env["CLAUDE_CODE_EFFORT_LEVEL"], "low")
+        self.assertEqual(env["CLAUDE_CODE_EFFORT_LEVEL"], "medium")
         self.assertEqual(env["ANTHROPIC_MODEL"], "sonnet")
         self.assertEqual(
             env["ANTHROPIC_DEFAULT_OPUS_MODEL_NAME"],
